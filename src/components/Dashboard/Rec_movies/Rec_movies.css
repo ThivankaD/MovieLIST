@@ -1,0 +1,46 @@
+.recommended-movies {
+  padding: 2rem;
+  background-image: url('../../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.recommended-movies h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.movieR-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.movieR-card {
+  background-color: #252525;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movieR-card:hover {
+  transform: scale(1.05);
+}
+
+.movieR-poster {
+  width: 100%;
+  height: auto;
+}
+
+.movieR-title {
+  padding: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.no-movies {
+  font-style: italic;
+  opacity: 0.6;
+}

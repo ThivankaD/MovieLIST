@@ -1,0 +1,202 @@
+.watchlist-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+  
+   height: 100vh; /* full screen height */
+  width: 100vw;  /* full screen width */
+ background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+}
+.watchlist{
+   position: fixed; /* or use absolute if your navbar is not fixed */
+  top: 66px;       /* adjust to your navbar height */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  min-height: calc(100vh - 72px); /* adjust for navbar height */
+  background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 20px 0; /* Only vertical padding */
+  overflow-y: auto;
+  z-index: 1;
+}
+.watchlist-empty h2{
+  color: white;
+  margin: 10px 30px;
+}
+
+
+
+
+.watchlist-header {
+ 
+  padding: 20px;
+  
+
+  
+  margin-bottom: 20px;
+}
+
+.watchlist-header h2 {
+  color: white;
+}
+
+.empty-state {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px 30px;
+  backdrop-filter: blur(6px); /* smooth glass effect */
+  color: white; /* optional: better visibility */
+}
+
+
+.empty-state h3 {
+  color: black;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.empty-state p {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.browse-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.browse-btn:hover {
+  transform: translateY(-2px);
+}
+.moview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0 2vw; /* Add horizontal padding for spacing */
+  box-sizing: border-box;
+  background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+  
+}
+
+
+.movie-card {
+   background-image: url('../../Assests/5.jpg');
+   background-size: 150%;       /* Scale image to half its original size */
+    
+    background-position: center;
+   
+        /* Scale image to cover entire container */
+    /* Center the image */
+ 
+  
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-bottom: 1px solid #30363d;
+}
+
+.movie-info {
+  padding: 1rem;
+}
+
+.movie-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: white;                 /* Text stands out */
+    background-color: black;    /* Bright, attention-grabbing background */
+    padding: 0.3rem 0.6rem;       /* Breathing space */
+    border-radius: 4px;           /* Smooth corners */
+    font-weight: bold;            /* Strong emphasis */
+    display: inline-block;        /* Wraps background only around text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle depth */
+}
+
+
+.movie-year,
+.movie-genre,
+.movie-rating {
+  font-size: 0.85rem;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.movie-description {
+  font-size: 0.85rem;
+  color: black;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.movie-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.watch-btn,
+.remove-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.watch-btn {
+  background: #238636;
+}
+
+.watch-btn:hover {
+  background: #2ea043;
+}
+
+.remove-btn {
+  background: #da3633;
+}
+
+.remove-btn:hover {
+  background: #f85149;
+}
+

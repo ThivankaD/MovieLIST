@@ -1,0 +1,94 @@
+.slideshow {
+  position: relative; /* ← Was: fixed */
+  height: 75vh;     /* or absolute if you want it under a fixed navbar */
+  left: 0;
+  top:0;
+  width: 100vw;
+  height: 75vh;
+  margin: 0;
+  padding: 0;
+  background: #18182b;   /* fallback */
+  overflow: hidden;
+  z-index: 1;            /* make sure it's below a fixed navbar, if any */
+  display: flex;
+  align-items: center;
+}
+
+.slideshow-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.slideshow-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(18,18,38,0.92) 0%, rgba(18,18,38,0.3) 70%, transparent 100%);
+  z-index: 1;
+}
+
+.slideshow-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 3rem 2rem;
+  max-width: 60%;
+}
+
+.slideshow-category {
+  color: #ff8fa3;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.slideshow-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.slideshow-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.slideshow-info-item {
+  background: rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 0.3em 0.8em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.slideshow-desc {
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.slideshow-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: background 0.2s;
+}
+
+.slideshow-nav.prev { left: 1rem; }
+.slideshow-nav.next { right: 1rem; }
+
+.slideshow-nav:hover { background: rgba(0,0,0,0.7); }

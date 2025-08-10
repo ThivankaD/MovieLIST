@@ -1,0 +1,123 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.auth-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.auth-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.page-title {
+  text-align: center;
+  font-size: 50px;
+  margin: 1rem 0;
+  color: white;
+}
+
+.open-auth-btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sec{
+    text-align: center;
+  font-size: 20px;
+  margin: 1rem 0;
+  color: white;
+}
+.page-container{
+
+  display: flex;
+  flex-direction: column;       /* Stack title, subtitle, and button */
+  justify-content: center;      /* Vertical center */
+  align-items: center;          /* Horizontal center */
+  text-align: center; 
+  position: fixed; /* or use absolute if your navbar is not fixed */
+  top: 0;       /* adjust to your navbar height */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  min-height: calc(100vh - 72px); /* adjust for navbar height */
+  background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 20px 0; /* Only vertical padding */
+  overflow-y: auto;
+  z-index: 1;
+
+
+}
