@@ -3,13 +3,15 @@
   background-image: url('../../../Assests/wallpaperflare.com_wallpaper.jpg');
   background-size: cover;       /* Scale image to cover entire container */
   background-position: center;  /* Center the image */
-  background-repeat: no-repeat;
-  color: #fff;
+  background-repeat: repeat-y;
+  color: aliceblue;
 }
 
 .recommended-movies h2 {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  
 }
 
 .movieR-grid {
@@ -23,6 +25,7 @@
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  align-items: center;
 }
 
 .movieR-card:hover {

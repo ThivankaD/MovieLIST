@@ -21,7 +21,7 @@ const MovieModal = ({ movie, onClose }) => {
             <strong>Genre:</strong> {movie.genre}
           </p>
           <p>
-            <strong>Rating:</strong> {movie.rating}
+            <strong> ⭐Rating:</strong> {movie.rating}
           </p>
           <p>{movie.description}</p>
         </div>
@@ -63,7 +63,13 @@ const MovieSearch = ({ user }) => {
     fetch(`http://localhost:8080/api/users/by-username/${encodeURIComponent(user.name)}/watchlist`)
       .then(res => res.json())
       .then(data => {
-        setWatchlist(data)
+        const normalizedWatchlist = Array.isArray(data)
+        ? data.map(m => ({
+            ...m,
+            movieId: m.movieId ?? m.id ?? m._id,
+          }))
+        : [];
+        setWatchlist(normalizedWatchlist)
         setLoadingWatchlist(false)
       })
       .catch(err => {

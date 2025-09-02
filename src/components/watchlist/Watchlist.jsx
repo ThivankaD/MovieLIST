@@ -1,13 +1,14 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect,useCallback } from "react"
 import './watchlist.css';
+import { Link } from "react-router-dom"
 
 const Watchlist = ({ user }) => {
   const [watchlist, setWatchlist] = useState([])
   const [loading, setLoading] = useState(true)
 
-  const fetchWatchlist = async () => {
+ const fetchWatchlist = useCallback(async () => {
     setLoading(true)
     try {
       const res = await fetch(`http://localhost:8080/api/users/by-username/${user.name}/watchlist`)
@@ -18,11 +19,12 @@ const Watchlist = ({ user }) => {
       setWatchlist([])
     }
     setLoading(false)
-  }
+  }, [user.name]) // dependency ensures it updates if user.name changes
 
+  // Call fetchWatchlist whenever user.name changes
   useEffect(() => {
     if (user?.name) fetchWatchlist()
-  }, [user.name])
+  }, [user?.name, fetchWatchlist])
 
   // Use movie.movieId for backend calls!
   const removeFromWatchlist = async (movieId) => {
@@ -71,7 +73,9 @@ const Watchlist = ({ user }) => {
         <div className="empty-state">
           <h3>🎬 Your watchlist is empty</h3>
           <p>Start adding movies you want to watch!</p>
-          <button className="browse-btn">Browse Movies</button>
+          <Link to="/search">
+            <button className="browse-btn">Browse Movies</button>
+          </Link>
         </div>
       </div>
     )

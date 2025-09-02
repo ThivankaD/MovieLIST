@@ -3,9 +3,9 @@ import "../Slideshow/Slideshow.css";
 
 const slides = [
   {
-    image: "https://your-image-url-1.jpg",
-    category: "#4 Spotlight",
-    title: "The Too–Perfect Saint: Tossed Aside by My Fiancé and Sold t...",
+    image: "https://i.pinimg.com/1200x/fe/3c/95/fe3c959819ad935653faf5fa81b0161b.jpg",
+    category: "#4 UpComing",
+    title: "Stranger Things - Season 5",
     info: [
       { icon: "tv", text: "TV" },
       { icon: "clock", text: "24m" },
@@ -17,13 +17,13 @@ const slides = [
     description:
       "Philia hails from a family renowned for producing generations of saints, and she is no exception. In fact, she is known as the most powerful saint of all time, so extraordinarily gifted that many people find her insufferable. When even her fiancé decides he can't stand her, he suddenly calls off their..."
   },{
-  image: "https://static.animecorner.me/2024/01/oshinoko_s2_mainvisual.jpg",
+  image: "https://i.pinimg.com/1200x/8d/09/89/8d09896173553f44deda14ee15bc104c.jpg",
   category: "#1 Trending",
-  title: "Oshi no Ko: The Idol's Secret Life",
+  title: "Squid Game - Season 3",
   info: [
     { icon: "tv", text: "TV" },
-    { icon: "clock", text: "23m" },
-    { icon: "calendar", text: "Jul 4, 2024" },
+    { icon: "clock", text: "30m" },
+    { icon: "calendar", text: "Jul 4, 2025" },
     { icon: "hd", text: "HD" },
     { icon: "cc", text: "13" },
     { icon: "pg", text: "PG" }
@@ -32,12 +32,12 @@ const slides = [
     "A rising idol tries to balance her stardom and her hidden past, but fate takes a surprising turn when a dedicated doctor becomes entangled in her world."
 },
 {
-  image: "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
-  category: "#2 Fan Favorite",
-  title: "Fullmetal Alchemist: Brotherhood",
+  image: "https://i.pinimg.com/1200x/0a/db/43/0adb4315d6893c70d35181ef1ee386f5.jpg",
+  category: "#2 Great of all time",
+  title: "Game of Thrones",
   info: [
     { icon: "tv", text: "TV" },
-    { icon: "clock", text: "24m" },
+    { icon: "clock", text: "50m" },
     { icon: "calendar", text: "Apr 5, 2009" },
     { icon: "hd", text: "HD" },
     { icon: "cc", text: "64" },
@@ -47,16 +47,16 @@ const slides = [
     "Brothers Edward and Alphonse Elric use alchemy to search for the Philosopher’s Stone, hoping to restore their bodies after a disastrous failed ritual."
 },
 {
-  image: "https://cdn.myanimelist.net/images/anime/10/47347l.jpg",
+  image: "https://i.pinimg.com/1200x/90/59/dd/9059ddf100f700354715af20a514528e.jpg",
   category: "#3 New Arrival",
-  title: "Attack on Titan: The Final Season",
+  title: "Thunderbolts - New AVENGERS",
   info: [
-    { icon: "tv", text: "TV" },
-    { icon: "clock", text: "25m" },
-    { icon: "calendar", text: "Dec 7, 2020" },
+    { icon: "tv", text: "movie" },
+    { icon: "clock", text: "1h45m" },
+    { icon: "calendar", text: "jun 7, 2025" },
     { icon: "hd", text: "HD" },
     { icon: "cc", text: "16" },
-    { icon: "r", text: "R" }
+    { icon: "r", text: "pg" }
   ],
   description:
     "Eren Yeager and his friends fight for freedom and survival as they uncover the secrets behind the Titans and the true history of their walled world."

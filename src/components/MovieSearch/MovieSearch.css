@@ -9,7 +9,7 @@
   background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
   background-size: cover;       /* Scale image to cover entire container */
   background-position: center;  /* Center the image */
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   color: #fff;
   box-sizing: border-box;
   padding: 20px 0; /* Only vertical padding */
@@ -159,8 +159,8 @@
 }
 .popup {
   position: fixed;
-  top: 32px;
-  right: 32px;
+  top: 72px;
+  
   padding: 16px 24px;
   border-radius: 6px;
   font-weight: bold;

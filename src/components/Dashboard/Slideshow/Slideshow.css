@@ -2,9 +2,9 @@
   position: relative; /* ← Was: fixed */
   height: 75vh;     /* or absolute if you want it under a fixed navbar */
   left: 0;
-  top:0;
+  top:50px;
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background: #18182b;   /* fallback */
@@ -44,6 +44,15 @@
   color: #ff8fa3;
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
+   
+   
+                     /* Text stands out */
+    background-color: black;    /* Bright, attention-grabbing background */
+    padding: 0.3rem 0.6rem;       /* Breathing space */
+    border-radius: 4px;           /* Smooth corners */
+    font-weight: bold;            /* Strong emphasis */
+    display: inline-block;        /* Wraps background only around text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle depth */
 }
 
 .slideshow-title {

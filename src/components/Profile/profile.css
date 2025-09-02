@@ -1,0 +1,88 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center; /* center vertically */
+  min-height: 100vh;
+ 
+ 
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../Assests/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;       /* Scale image to cover entire container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.profile-page h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+.profile-page form {
+     align-items: center;
+  margin-top: 50px;  
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  gap: 30px;
+   background-image: url('../../Assests/5.jpg');
+   background-size: 75%;       /* Scale image to half its original size */
+    
+    background-position: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page label {
+  font-weight: bold;
+  margin-bottom: 10px;
+   background-color: white;    /* Bright, attention-grabbing background */
+    padding: 0.3rem 0.6rem;       /* Breathing space */
+    border-radius: 4px;           /* Smooth corners */
+    font-weight: bold;            /* Strong emphasis */
+    display: inline-block;        /* Wraps background only around text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.profile-page input {
+  padding: 10px;
+  margin-left: 20px;
+  width: 500px;
+  border: 1px solid #050505;
+  border-radius: 8px;
+  font-size: 14px;
+  font-style:oblique;
+}
+
+.profile-page button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 300px;
+}
+
+.profile-page button[type="submit"] {
+  background: #1a286d;
+  color: white;
+  
+}
+
+.profile-page button[type="submit"]:hover {
+  background: #2539a0;
+}
+
+.delete-btn {
+  margin-top: 20px;
+  background: #d9534f;
+  color: white;
+  width: 300px;
+}
+
+.delete-btn:hover {
+  background: #2cc93c;
+}
