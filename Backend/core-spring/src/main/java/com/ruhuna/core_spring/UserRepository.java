@@ -1,0 +1,14 @@
+package com.ruhuna.core_spring;
+
+
+
+import com.ruhuna.core_spring.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByUsername(String username);
+    Optional<User> findByEmail(String email);
+    Optional <User> findByusername(String username);
+}
+
